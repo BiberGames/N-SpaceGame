@@ -3,9 +3,8 @@ A sinple game for the TI-Nspire calculator written in lua.
 
 # Screenshots
 
-![Screenshot 1](screenshots/1.png)
-![Screenshot 2](screenshots/2.png)
-![Screenshot 3](screenshots/3.png)
+![Screenshot 1](screenshots/2.png)
+![Screenshot 2](screenshots/3.png)
 
 ## Controls
 
