@@ -23,6 +23,6 @@ Yust type `make` in the terminal and have [Python 3](https://www.python.org/) wi
 
 
 ## Other Open source projects used
-Pakaging lua code for the calculator with [Luna](https://github.com/ndless-nspire/Luna).
+Packaging lua code for the calculator with [Luna](https://github.com/ndless-nspire/Luna).
 
 Converting sprites with [TI Resource Merge](https://github.com/DaveDuck321/TI-Resource-Merge).
