@@ -5,6 +5,4 @@ A sinple game for the TI-Nspire calculator written in lua.
 
 | Key(s)                   | Action      |
 |--------------------------|-------------|
-| Arrow Keys / Number Keys | Move Cursor |
-| Enter                    | Open Cell   |
-| (-) / F                  | Flag Cell   |
+| Moving Mouse cursor      | Move Player |
