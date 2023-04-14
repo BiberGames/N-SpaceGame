@@ -17,3 +17,6 @@ Avoid the falling down astoroids.
 Download the `.tns` file from the latest release
 [here](https://github.com/BiberGames/N-SpaceGame/releases) and copy
 it to your calculator with the original software or with [N-Link](https://github.com/lights0123/n-link).
+
+## Building yourself
+Yust type `make` in the terminal and have Python 3 with the [PIL Libary](https://pillow.readthedocs.io/en/stable/).
