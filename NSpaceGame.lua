@@ -13,10 +13,12 @@ function Variables()
     maxRockCount = 5
     RockX = {} -- Rock X Position
     RockY = {} -- Rock Y Position
+    RockRotation = {}
 
     maxStarCount = 30
     StarX = {} -- Star X Position
     StarY = {} -- Star Y Position
+    StarRotation = {}
 
     logoYPosition = -64
 
@@ -65,6 +67,7 @@ function SpawnStars()
     for i=1, maxStarCount do
         StarY[i] = math.random(-128, platform.window:height())
         StarX[i] = math.random(0, platform.window:width() - 64)
+        StarRotation[i] = math.random(0, 359);
     end
 end
 
@@ -77,7 +80,7 @@ function DrawStars(gc)
             StarX[i] = math.random(0, platform.window:width())
         end
 
-        gc:drawImage(images.star, StarX[i]-8, StarY[i]-8)
+        gc:drawImage(images.star:rotate(StarRotation[i]), StarX[i]-8, StarY[i]-8)
     end
 end
 
@@ -85,6 +88,7 @@ function SpawnRocks()
     for i=1, maxRockCount do
         RockY[i] = math.random(-128, 0)
         RockX[i] = math.random(0, platform.window:width() - 64)
+        RockRotation[i] = math.random(0, 359);
     end
 end
 
@@ -101,7 +105,7 @@ function DrawRocks(gc)
         end
 
         --DrawBoundingBox(gc, RockX[i]-32, RockY[i]-32, 32, 32)
-        gc:drawImage(images.rock, RockX[i]-32, RockY[i]-32)
+        gc:drawImage(images.rock:rotate(RockRotation[i]), RockX[i]-32, RockY[i]-32)
     end
 end
 -- ########### Flying objects ###########
@@ -165,7 +169,7 @@ function Intro(gc)
 
     -- Drawing HUD
     gc:setColorRGB(128, 128, 128)
-    gc:drawString("(c) BenjaGames 2023 / @BENJA_303#8451" .. score, 0, 0, "top")
+    gc:drawString("(c) BenjaGames 2023 / BENJA_303#8451" .. score, 0, 0, "top")
 end
 
 function GamePlay(gc)
